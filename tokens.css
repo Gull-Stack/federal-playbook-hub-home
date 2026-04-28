@@ -1,0 +1,607 @@
+/* ══════════════════════════════════════════════════════════════════════════
+   THE FEDERAL PLAYBOOK — Design Tokens
+   A property of Capital Wealth · Federal sub-brand
+
+   URL:   capitalwealth.com/federal-benefits-playbook/
+   Brand: "The Federal Playbook"
+
+   Federal palette ONLY: Old Glory Red, Old Glory Blue, White.
+   Do NOT import the main CW navy/gold palette on these pages.
+   ══════════════════════════════════════════════════════════════════════════ */
+
+:root {
+  /* ─── Core palette ────────────────────────────────────────────── */
+  --fp-red:             #B31942;   /* Old Glory Red          */
+  --fp-red-dark:        #8E122F;   /* Pressed / emphasis     */
+  --fp-red-tint:        #F4E2E7;   /* Background tint        */
+
+  --fp-blue:            #0A3161;   /* Old Glory Blue         */
+  --fp-blue-dark:       #081F3F;   /* Pressed / emphasis     */
+  --fp-blue-tint:       #E4EAF2;   /* Background tint        */
+
+  --fp-white:           #FFFFFF;
+  --fp-paper:           #FAFAF7;   /* Warm off-white         */
+  --fp-cream:           #F4EEE3;   /* Editorial cream bg     */
+
+  /* ─── Ink & neutrals (warm grays, not cold) ───────────────────── */
+  --fp-ink:             #141618;   /* Body copy, h1-h2       */
+  --fp-ink-soft:        #2A2E33;   /* Secondary heads        */
+  --fp-muted:           #5C636C;   /* Captions, meta         */
+  --fp-muted-2:         #8A919A;   /* Disabled, dividers     */
+  --fp-hairline:        #E4E2DD;   /* Dividers, card edges   */
+  --fp-hairline-strong: #C9C5BD;   /* Stronger hairlines     */
+
+  /* ─── Functional ──────────────────────────────────────────────── */
+  --fp-success:         #1F6B3F;
+  --fp-warning:         #B87910;
+  --fp-danger:          var(--fp-red-dark);
+
+  /* Agency / topic tag colors (muted, institutional) */
+  --fp-tag-dod:         #294D6E;
+  --fp-tag-va:          #4E6B2E;
+  --fp-tag-usps:        #6E3E1F;
+  --fp-tag-civilian:    #4B4E83;
+
+  /* ─── Typography ──────────────────────────────────────────────── */
+  /* Editorial serif + clean sans pairing.
+     Source Serif is free, institutional, reads as "serious but warm."
+     Inter is the workhorse sans. JetBrains Mono for eyebrows + data. */
+  --fp-font-serif:      "Source Serif 4", "Source Serif Pro", Georgia, "Times New Roman", serif;
+  --fp-font-sans:       "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --fp-font-mono:       "JetBrains Mono", "Geist Mono", ui-monospace, Menlo, monospace;
+
+  /* Type scale — modular, 1.25 major third */
+  --fp-size-caption:    0.75rem;    /* 12px — mono eyebrows  */
+  --fp-size-small:      0.875rem;   /* 14px — meta, footer   */
+  --fp-size-body:       1.0625rem;  /* 17px — body copy      */
+  --fp-size-lede:       1.25rem;    /* 20px — intro graf     */
+  --fp-size-h6:         1.125rem;   /* 18px                  */
+  --fp-size-h5:         1.375rem;   /* 22px                  */
+  --fp-size-h4:         1.75rem;    /* 28px                  */
+  --fp-size-h3:         2.25rem;    /* 36px                  */
+  --fp-size-h2:         3rem;       /* 48px                  */
+  --fp-size-h1:         4.25rem;    /* 68px                  */
+  --fp-size-display:    6rem;       /* 96px — hero only      */
+
+  --fp-leading-tight:   1.05;
+  --fp-leading-snug:    1.2;
+  --fp-leading-normal:  1.45;
+  --fp-leading-reading: 1.65;
+  --fp-leading-loose:   1.8;
+
+  --fp-tracking-caps:   0.16em;
+  --fp-tracking-tight:  -0.015em;
+  --fp-tracking-display:-0.025em;
+
+  /* ─── Spacing (8pt-ish, with editorial half-steps) ────────────── */
+  --fp-space-1:   4px;
+  --fp-space-2:   8px;
+  --fp-space-3:   12px;
+  --fp-space-4:   16px;
+  --fp-space-5:   24px;
+  --fp-space-6:   32px;
+  --fp-space-7:   48px;
+  --fp-space-8:   64px;
+  --fp-space-9:   96px;
+  --fp-space-10:  128px;
+  --fp-space-11:  160px;
+
+  /* ─── Layout ──────────────────────────────────────────────────── */
+  --fp-container:       1240px;
+  --fp-container-narrow:880px;      /* Long-form reading     */
+  --fp-container-wide:  1440px;
+  --fp-gutter:          24px;
+  --fp-gutter-lg:       32px;
+
+  /* ─── Radii (restrained — this is institutional) ──────────────── */
+  --fp-radius-xs:       2px;
+  --fp-radius-sm:       4px;
+  --fp-radius-md:       8px;
+  --fp-radius-lg:       12px;
+  --fp-radius-pill:     999px;
+
+  /* ─── Shadows (soft, realistic, for cards only) ───────────────── */
+  --fp-shadow-sm:       0 1px 2px rgba(10, 31, 63, 0.05);
+  --fp-shadow-md:       0 2px 8px rgba(10, 31, 63, 0.08), 0 1px 2px rgba(10, 31, 63, 0.04);
+  --fp-shadow-lg:       0 12px 32px rgba(10, 31, 63, 0.10), 0 4px 8px rgba(10, 31, 63, 0.05);
+  --fp-shadow-xl:       0 24px 60px rgba(10, 31, 63, 0.14), 0 8px 16px rgba(10, 31, 63, 0.06);
+
+  /* ─── Motion ──────────────────────────────────────────────────── */
+  --fp-ease:            cubic-bezier(0.2, 0.8, 0.2, 1);
+  --fp-ease-in:         cubic-bezier(0.5, 0, 0.8, 0.2);
+  --fp-duration-fast:   160ms;
+  --fp-duration-med:    240ms;
+  --fp-duration-slow:   420ms;
+
+  /* ─── Z-index ─────────────────────────────────────────────────── */
+  --fp-z-dropdown:      100;
+  --fp-z-header:        500;
+  --fp-z-overlay:       800;
+  --fp-z-modal:         900;
+  --fp-z-toast:         1000;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   Global reset + base
+   ══════════════════════════════════════════════════════════════════════════ */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body.fp-body {
+  margin: 0;
+  font-family: var(--fp-font-sans);
+  font-size: var(--fp-size-body);
+  line-height: var(--fp-leading-reading);
+  color: var(--fp-ink);
+  background: var(--fp-paper);
+  font-feature-settings: "ss01", "cv11";
+}
+
+img, svg { display: block; max-width: 100%; height: auto; }
+
+/* ══════════════════════════════════════════════════════════════════════════
+   Typography primitives
+   ══════════════════════════════════════════════════════════════════════════ */
+
+.fp-display {
+  font-family: var(--fp-font-serif);
+  font-size: clamp(3.5rem, 8vw, var(--fp-size-display));
+  font-weight: 600;
+  line-height: var(--fp-leading-tight);
+  letter-spacing: var(--fp-tracking-display);
+  color: var(--fp-blue);
+}
+.fp-h1 {
+  font-family: var(--fp-font-serif);
+  font-size: clamp(2.5rem, 5vw, var(--fp-size-h1));
+  font-weight: 600;
+  line-height: var(--fp-leading-tight);
+  letter-spacing: var(--fp-tracking-tight);
+  color: var(--fp-blue);
+  margin: 0;
+}
+.fp-h2 {
+  font-family: var(--fp-font-serif);
+  font-size: clamp(2rem, 4vw, var(--fp-size-h2));
+  font-weight: 600;
+  line-height: var(--fp-leading-snug);
+  letter-spacing: var(--fp-tracking-tight);
+  color: var(--fp-blue);
+  margin: 0;
+}
+.fp-h3 {
+  font-family: var(--fp-font-serif);
+  font-size: clamp(1.75rem, 3vw, var(--fp-size-h3));
+  font-weight: 600;
+  line-height: var(--fp-leading-snug);
+  letter-spacing: var(--fp-tracking-tight);
+  color: var(--fp-blue);
+  margin: 0;
+}
+.fp-h4 {
+  font-family: var(--fp-font-serif);
+  font-size: var(--fp-size-h4);
+  font-weight: 600;
+  line-height: var(--fp-leading-snug);
+  color: var(--fp-blue);
+  margin: 0;
+}
+.fp-h5 {
+  font-family: var(--fp-font-sans);
+  font-size: var(--fp-size-h5);
+  font-weight: 600;
+  line-height: var(--fp-leading-normal);
+  color: var(--fp-ink);
+  margin: 0;
+}
+
+.fp-italic { font-style: italic; font-weight: 400; }
+.fp-accent-red { color: var(--fp-red); }
+.fp-accent-blue { color: var(--fp-blue); }
+
+.fp-lede {
+  font-family: var(--fp-font-serif);
+  font-size: var(--fp-size-lede);
+  line-height: var(--fp-leading-reading);
+  color: var(--fp-ink-soft);
+  margin: 0;
+}
+
+.fp-body-text {
+  font-size: var(--fp-size-body);
+  line-height: var(--fp-leading-reading);
+  color: var(--fp-ink);
+}
+
+.fp-eyebrow {
+  display: inline-block;
+  font-family: var(--fp-font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: var(--fp-tracking-caps);
+  text-transform: uppercase;
+  color: var(--fp-red);
+}
+.fp-eyebrow-blue { color: var(--fp-blue); }
+.fp-eyebrow-muted { color: var(--fp-muted); }
+
+.fp-caption {
+  font-family: var(--fp-font-mono);
+  font-size: var(--fp-size-caption);
+  letter-spacing: 0.04em;
+  color: var(--fp-muted);
+}
+
+.fp-small-caps {
+  font-family: var(--fp-font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: var(--fp-tracking-caps);
+  text-transform: uppercase;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   Layout utilities
+   ══════════════════════════════════════════════════════════════════════════ */
+
+.fp-container {
+  max-width: var(--fp-container);
+  margin: 0 auto;
+  padding: 0 var(--fp-gutter);
+}
+.fp-container-narrow { max-width: var(--fp-container-narrow); margin: 0 auto; padding: 0 var(--fp-gutter); }
+.fp-container-wide { max-width: var(--fp-container-wide); margin: 0 auto; padding: 0 var(--fp-gutter); }
+
+.fp-rule {
+  border: 0;
+  height: 1px;
+  background: var(--fp-hairline);
+  margin: var(--fp-space-7) 0;
+}
+.fp-rule-strong { background: var(--fp-blue); height: 2px; }
+.fp-rule-red { background: var(--fp-red); height: 3px; width: 48px; margin-left: 0; }
+
+/* ══════════════════════════════════════════════════════════════════════════
+   Buttons — 3-tier hierarchy
+   Primary (red):   "Book a Call"
+   Secondary:       "Run the Calculator"
+   Tertiary/ghost:  "Download the Guide"
+   ══════════════════════════════════════════════════════════════════════════ */
+
+.fp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: var(--fp-font-sans);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1;
+  padding: 16px 26px;
+  border-radius: var(--fp-radius-md);
+  border: 1.5px solid transparent;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background var(--fp-duration-fast) var(--fp-ease),
+              color var(--fp-duration-fast) var(--fp-ease),
+              transform var(--fp-duration-fast) var(--fp-ease),
+              box-shadow var(--fp-duration-fast) var(--fp-ease),
+              border-color var(--fp-duration-fast) var(--fp-ease);
+  letter-spacing: 0.005em;
+}
+.fp-btn:focus-visible {
+  outline: 2px solid var(--fp-blue);
+  outline-offset: 3px;
+}
+
+/* Primary — Old Glory Red, the single "Book a Call" color */
+.fp-btn-primary {
+  background: var(--fp-red);
+  color: var(--fp-white);
+}
+.fp-btn-primary:hover {
+  background: var(--fp-red-dark);
+  transform: translateY(-1px);
+  box-shadow: var(--fp-shadow-md);
+  color: var(--fp-white);
+}
+
+/* Secondary — Blue outline, used for "Run the Calculator" */
+.fp-btn-secondary {
+  background: transparent;
+  color: var(--fp-blue);
+  border-color: var(--fp-blue);
+}
+.fp-btn-secondary:hover {
+  background: var(--fp-blue);
+  color: var(--fp-white);
+}
+
+/* Tertiary — ghost link w/ underline, for "Download the Guide" */
+.fp-btn-tertiary {
+  background: transparent;
+  color: var(--fp-blue);
+  padding-left: 0;
+  padding-right: 0;
+  border-radius: 0;
+  border-bottom: 1.5px solid var(--fp-blue);
+  border-width: 0 0 1.5px 0;
+  gap: 8px;
+}
+.fp-btn-tertiary:hover {
+  color: var(--fp-red);
+  border-bottom-color: var(--fp-red);
+}
+
+/* Compact variant */
+.fp-btn-sm { padding: 10px 18px; font-size: 14px; }
+.fp-btn-lg { padding: 20px 32px; font-size: 17px; }
+
+/* Icon-only adjustments */
+.fp-btn svg { width: 16px; height: 16px; flex: none; }
+
+/* ══════════════════════════════════════════════════════════════════════════
+   Forms (shared across lead-capture + masterclass + contact)
+   ══════════════════════════════════════════════════════════════════════════ */
+
+.fp-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 18px;
+}
+.fp-label {
+  font-family: var(--fp-font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: var(--fp-tracking-caps);
+  text-transform: uppercase;
+  color: var(--fp-ink-soft);
+}
+.fp-input,
+.fp-select,
+.fp-textarea {
+  font-family: var(--fp-font-sans);
+  font-size: 16px;
+  line-height: 1.3;
+  padding: 14px 16px;
+  background: var(--fp-white);
+  color: var(--fp-ink);
+  border: 1.5px solid var(--fp-hairline-strong);
+  border-radius: var(--fp-radius-md);
+  transition: border-color var(--fp-duration-fast) var(--fp-ease),
+              box-shadow var(--fp-duration-fast) var(--fp-ease);
+}
+.fp-input:focus,
+.fp-select:focus,
+.fp-textarea:focus {
+  outline: none;
+  border-color: var(--fp-blue);
+  box-shadow: 0 0 0 3px rgba(10, 49, 97, 0.12);
+}
+.fp-input::placeholder { color: var(--fp-muted-2); }
+.fp-textarea { min-height: 120px; resize: vertical; font-family: var(--fp-font-sans); }
+
+.fp-checkbox-row {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  font-size: 14px;
+  color: var(--fp-muted);
+  line-height: 1.5;
+}
+.fp-checkbox-row input[type="checkbox"] {
+  width: 18px; height: 18px;
+  accent-color: var(--fp-red);
+  margin-top: 2px;
+  flex: none;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   Cards & callouts
+   ══════════════════════════════════════════════════════════════════════════ */
+
+.fp-card {
+  background: var(--fp-white);
+  border: 1px solid var(--fp-hairline);
+  border-radius: var(--fp-radius-lg);
+  padding: var(--fp-space-6);
+  transition: border-color var(--fp-duration-fast) var(--fp-ease),
+              box-shadow var(--fp-duration-fast) var(--fp-ease),
+              transform var(--fp-duration-fast) var(--fp-ease);
+}
+.fp-card-hover:hover {
+  border-color: var(--fp-blue-tint);
+  box-shadow: var(--fp-shadow-md);
+  transform: translateY(-2px);
+}
+
+/* Callout — editorial sidebar note, red left rule */
+.fp-callout {
+  border-left: 3px solid var(--fp-red);
+  padding: var(--fp-space-3) 0 var(--fp-space-3) var(--fp-space-5);
+  background: transparent;
+  margin: var(--fp-space-6) 0;
+}
+.fp-callout-title {
+  font-family: var(--fp-font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: var(--fp-tracking-caps);
+  text-transform: uppercase;
+  color: var(--fp-red);
+  margin-bottom: 8px;
+}
+.fp-callout-body {
+  font-family: var(--fp-font-serif);
+  font-size: 1.05rem;
+  line-height: var(--fp-leading-reading);
+  color: var(--fp-ink);
+  margin: 0;
+}
+
+/* Agency callout — blue variant for e.g. "DoD civilians only" notes */
+.fp-callout-agency {
+  border-left-color: var(--fp-blue);
+  background: var(--fp-blue-tint);
+  padding: var(--fp-space-5);
+  border-radius: 0 var(--fp-radius-md) var(--fp-radius-md) 0;
+}
+.fp-callout-agency .fp-callout-title { color: var(--fp-blue); }
+
+/* Key-stat pull quote — large display number */
+.fp-stat {
+  font-family: var(--fp-font-serif);
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 600;
+  line-height: 0.95;
+  color: var(--fp-red);
+  letter-spacing: var(--fp-tracking-display);
+}
+.fp-stat-label {
+  font-family: var(--fp-font-mono);
+  font-size: 11px;
+  letter-spacing: var(--fp-tracking-caps);
+  text-transform: uppercase;
+  color: var(--fp-muted);
+  margin-top: 8px;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   Tags / chips (agency + topic filters, article meta)
+   ══════════════════════════════════════════════════════════════════════════ */
+
+.fp-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  font-family: var(--fp-font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: var(--fp-blue-tint);
+  color: var(--fp-blue);
+  border-radius: var(--fp-radius-sm);
+  text-decoration: none;
+}
+.fp-tag-dod      { background: rgba(41, 77, 110, 0.12);  color: var(--fp-tag-dod); }
+.fp-tag-va       { background: rgba(78, 107, 46, 0.12);  color: var(--fp-tag-va); }
+.fp-tag-usps     { background: rgba(110, 62, 31, 0.12);  color: var(--fp-tag-usps); }
+.fp-tag-civilian { background: rgba(75, 78, 131, 0.12);  color: var(--fp-tag-civilian); }
+.fp-tag-topic    { background: var(--fp-red-tint);       color: var(--fp-red-dark); }
+
+/* ══════════════════════════════════════════════════════════════════════════
+   Breadcrumbs
+   ══════════════════════════════════════════════════════════════════════════ */
+
+.fp-breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  font-family: var(--fp-font-mono);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: var(--fp-muted);
+  padding: var(--fp-space-5) 0 var(--fp-space-3);
+}
+.fp-breadcrumbs a { color: var(--fp-blue); text-decoration: none; }
+.fp-breadcrumbs a:hover { color: var(--fp-red); text-decoration: underline; }
+.fp-breadcrumbs-sep { color: var(--fp-muted-2); }
+
+/* ══════════════════════════════════════════════════════════════════════════
+   Lead-capture unit (sticky sidebar + inline variant)
+   ══════════════════════════════════════════════════════════════════════════ */
+
+.fp-leadcap {
+  background: var(--fp-blue);
+  color: var(--fp-white);
+  padding: var(--fp-space-6);
+  border-radius: var(--fp-radius-lg);
+  position: relative;
+  overflow: hidden;
+}
+.fp-leadcap::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 48px; height: 4px;
+  background: var(--fp-red);
+}
+.fp-leadcap-eyebrow {
+  font-family: var(--fp-font-mono);
+  font-size: 11px;
+  letter-spacing: var(--fp-tracking-caps);
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 12px;
+  display: block;
+}
+.fp-leadcap-title {
+  font-family: var(--fp-font-serif);
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--fp-white);
+  margin: 0 0 12px;
+}
+.fp-leadcap-body {
+  font-size: 14px;
+  line-height: 1.55;
+  color: rgba(255,255,255,0.85);
+  margin: 0 0 20px;
+}
+.fp-leadcap .fp-btn-primary {
+  width: 100%;
+  background: var(--fp-red);
+  color: var(--fp-white);
+}
+.fp-leadcap-meta {
+  font-family: var(--fp-font-mono);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: rgba(255,255,255,0.55);
+  margin-top: 12px;
+  text-align: center;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   Star microprint
+   ══════════════════════════════════════════════════════════════════════════ */
+
+.fp-stars {
+  display: inline-flex;
+  gap: 2px;
+  color: #D99A2F;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   Responsive utilities
+   ══════════════════════════════════════════════════════════════════════════ */
+
+@media (max-width: 900px) {
+  :root {
+    --fp-space-8: 48px;
+    --fp-space-9: 64px;
+    --fp-space-10: 80px;
+  }
+}
+
+@media (max-width: 640px) {
+  .fp-btn { padding: 14px 20px; font-size: 14px; }
+  .fp-btn-lg { padding: 16px 24px; font-size: 15px; }
+  .fp-rule { margin: var(--fp-space-6) 0; }
+}
+
+/* Print: masterclass + case study templates render for save-as-PDF */
+@media print {
+  .fp-leadcap, .fp-site-header, .fp-site-footer { display: none !important; }
+}

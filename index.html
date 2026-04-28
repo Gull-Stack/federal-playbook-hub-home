@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>The Federal Playbook — Retirement strategy for the federal workforce</title>
+  <meta name="description" content="Calculators, guides, and real plans for FERS, CSRS, and TSP participants in the 5–10 years before retirement. A property of Capital Wealth."/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,500;1,8..60,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="tokens.css"/>
+  <link rel="stylesheet" href="chrome.css"/>
+  <link rel="stylesheet" href="hub-home.css"/>
+</head>
+<body class="fp-body" data-active="">
+
+  <a class="fp-skip" href="#main">Skip to content</a>
+  <header id="fp-site-header"></header>
+
+  <main id="main">
+
+    <!-- ══════════════════════════════════════════════════════════════
+         HERO — editorial, validates first, shows a real plan
+         ══════════════════════════════════════════════════════════════ -->
+    <section class="hub-hero">
+      <div class="fp-container hub-hero-inner">
+        <div class="hub-hero-copy">
+          <div class="hub-hero-eyebrow">
+            <span class="hub-hero-flag" aria-hidden="true">
+              <span class="hub-hero-flag-blue"></span>
+              <span class="hub-hero-flag-stripes"></span>
+            </span>
+            <span class="fp-eyebrow fp-eyebrow-blue">The Federal Playbook · A property of Capital Wealth</span>
+          </div>
+
+          <h1 class="fp-display hub-hero-title">
+            Your benefits package is
+            <span class="fp-italic fp-accent-red">worth more</span>
+            than you think.
+            <span class="hub-hero-title-sub">You just need someone to read it with you.</span>
+          </h1>
+
+          <p class="fp-lede hub-hero-lede">
+            FERS, CSRS, TSP, FEHB, FEGLI, SRS &mdash; eight acronyms, one retirement, and an OPM website that reads like tax code. We built The Federal Playbook for the federal employee who's five to ten years out, done guessing, and ready to see real numbers.
+          </p>
+
+          <div class="hub-hero-ctas">
+            <a href="/book-a-call/" class="fp-btn fp-btn-primary fp-btn-lg">
+              Book a Call
+              <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10m-4-4l4 4-4 4" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="/federal-benefits-playbook/tools/fers-calculator/" class="fp-btn fp-btn-secondary fp-btn-lg">
+              Run the FERS calculator
+            </a>
+          </div>
+
+          <div class="hub-hero-trust">
+            <div class="hub-hero-trust-item">
+              <div class="hub-hero-trust-num">1,400+</div>
+              <div class="hub-hero-trust-lbl">federal households served</div>
+            </div>
+            <div class="hub-hero-trust-rule"></div>
+            <div class="hub-hero-trust-item">
+              <div class="hub-hero-trust-num">$640M</div>
+              <div class="hub-hero-trust-lbl">in federal assets under advisement</div>
+            </div>
+            <div class="hub-hero-trust-rule"></div>
+            <div class="hub-hero-trust-item">
+              <div class="hub-hero-trust-num">
+                <span class="fp-stars" aria-label="4.9 stars">★★★★★</span>
+                <span class="hub-hero-trust-num-val">4.9</span>
+              </div>
+              <div class="hub-hero-trust-lbl">Google · 236 reviews</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual: a "plan document" — abstract geometric treatment
+             of a real-looking FERS breakdown. No flags, no eagles. -->
+        <aside class="hub-hero-doc" aria-label="Example retirement plan document">
+          <div class="hub-hero-doc-chrome">
+            <span class="hub-hero-doc-chrome-dot"></span>
+            <span class="hub-hero-doc-chrome-dot"></span>
+            <span class="hub-hero-doc-chrome-dot"></span>
+            <span class="hub-hero-doc-chrome-label">RETIREMENT PLAN · GS-14 · DOD · AGE 58</span>
+          </div>
+
+          <div class="hub-hero-doc-body">
+            <div class="hub-hero-doc-head">
+              <div>
+                <div class="hub-hero-doc-eyebrow">Projected Monthly Income</div>
+                <div class="hub-hero-doc-title">After you hand in the ID badge</div>
+              </div>
+              <div class="hub-hero-doc-stamp">
+                <div class="hub-hero-doc-stamp-l1">CONFIDENCE</div>
+                <div class="hub-hero-doc-stamp-l2">HIGH</div>
+              </div>
+            </div>
+
+            <div class="hub-hero-doc-bar">
+              <div class="hub-hero-doc-bar-row">
+                <span class="hub-hero-doc-bar-label">FERS pension</span>
+                <span class="hub-hero-doc-bar-track"><span class="hub-hero-doc-bar-fill" style="--pct:52%; --c: var(--fp-blue);"></span></span>
+                <span class="hub-hero-doc-bar-val">$4,820</span>
+              </div>
+              <div class="hub-hero-doc-bar-row">
+                <span class="hub-hero-doc-bar-label">TSP withdrawal</span>
+                <span class="hub-hero-doc-bar-track"><span class="hub-hero-doc-bar-fill" style="--pct:34%; --c: var(--fp-red);"></span></span>
+                <span class="hub-hero-doc-bar-val">$3,150</span>
+              </div>
+              <div class="hub-hero-doc-bar-row">
+                <span class="hub-hero-doc-bar-label">Social Security</span>
+                <span class="hub-hero-doc-bar-track"><span class="hub-hero-doc-bar-fill" style="--pct:24%; --c: #294D6E;"></span></span>
+                <span class="hub-hero-doc-bar-val">$2,210</span>
+              </div>
+              <div class="hub-hero-doc-bar-row hub-hero-doc-bar-total">
+                <span class="hub-hero-doc-bar-label">Total monthly income</span>
+                <span class="hub-hero-doc-bar-track"></span>
+                <span class="hub-hero-doc-bar-val">$10,180</span>
+              </div>
+            </div>
+
+            <div class="hub-hero-doc-notes">
+              <div class="hub-hero-doc-note">
+                <span class="hub-hero-doc-note-bullet"></span>
+                <span>SRS bridges Social Security from 58 → 62</span>
+              </div>
+              <div class="hub-hero-doc-note">
+                <span class="hub-hero-doc-note-bullet"></span>
+                <span>Roth conversion corridor: $42k/yr</span>
+              </div>
+              <div class="hub-hero-doc-note">
+                <span class="hub-hero-doc-note-bullet"></span>
+                <span>FEHB continues into retirement</span>
+              </div>
+            </div>
+
+            <div class="hub-hero-doc-sign">
+              <div class="hub-hero-doc-sign-line"></div>
+              <div class="hub-hero-doc-sign-name">Mike Stevens</div>
+              <div class="hub-hero-doc-sign-role">Federal Benefits Specialist, Capital Wealth</div>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <div class="hub-hero-scroll">
+        <span class="fp-small-caps fp-eyebrow-muted">Start here</span>
+        <span class="hub-hero-scroll-line"></span>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════
+         VALIDATION BAND — "if any of this sounds familiar"
+         ══════════════════════════════════════════════════════════════ -->
+    <section class="hub-validate">
+      <div class="fp-container">
+        <div class="hub-validate-grid">
+          <div class="hub-validate-lead">
+            <span class="fp-eyebrow">If any of this sounds familiar</span>
+            <h2 class="fp-h2 hub-validate-title">You're not behind. The system is just hard.</h2>
+            <p class="fp-lede hub-validate-body">
+              Federal benefits are written for actuaries, not humans. The workshop your agency sends you to is a sales pitch with a laser pointer. Nobody explains the <em>why</em> &mdash; only the rules. That's what we fix.
+            </p>
+          </div>
+
+          <ul class="hub-validate-list">
+            <li>
+              <span class="hub-validate-quote">"I've been in 28 years and I still don't know what my high-3 actually is."</span>
+              <span class="hub-validate-tag">FERS</span>
+            </li>
+            <li>
+              <span class="hub-validate-quote">"My TSP is 80% in the G Fund because that's where it was when I started. Is that fine?"</span>
+              <span class="hub-validate-tag">TSP</span>
+            </li>
+            <li>
+              <span class="hub-validate-quote">"My wife has employer insurance. Do I really need to keep FEHB in retirement?"</span>
+              <span class="hub-validate-tag">FEHB</span>
+            </li>
+            <li>
+              <span class="hub-validate-quote">"OPM said six to nine months. It's been fourteen. I'm living on savings."</span>
+              <span class="hub-validate-tag">Post-retire</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════
+         TOOLS — the 8 calculators, laid out as a catalog
+         ══════════════════════════════════════════════════════════════ -->
+    <section class="hub-tools" id="tools">
+      <div class="fp-container">
+        <header class="hub-section-head">
+          <div>
+            <span class="fp-eyebrow">Section one · Calculators</span>
+            <h2 class="fp-h2 hub-section-title">Run your own numbers.<br/><span class="fp-italic fp-accent-red">No email required.</span></h2>
+          </div>
+          <div class="hub-section-meta">
+            <p class="fp-lede">Eight calculators built for the federal workforce. Same formulas OPM uses &mdash; just with a UI that doesn't hate you. Every tool gives you the answer in seconds; the email gate is optional, for the full PDF breakdown.</p>
+            <a href="/federal-benefits-playbook/tools/" class="fp-btn fp-btn-tertiary">See all eight →</a>
+          </div>
+        </header>
+
+        <div class="hub-tools-grid">
+          <a href="/federal-benefits-playbook/tools/fers-calculator/" class="hub-tool hub-tool-feature">
+            <div class="hub-tool-feature-chrome">
+              <span class="fp-small-caps" style="color:#fff; opacity:.75">Flagship · 23,400 searches/mo</span>
+              <span class="hub-tool-feature-badge">Most used</span>
+            </div>
+            <h3 class="hub-tool-title">FERS Retirement Calculator</h3>
+            <p class="hub-tool-body">Enter your high-3, years of service, and retirement age. Get your monthly FERS annuity, with and without survivor benefit, in under 30 seconds.</p>
+            <div class="hub-tool-feature-preview">
+              <svg viewBox="0 0 400 120" class="hub-tool-feature-chart" aria-hidden="true">
+                <defs>
+                  <linearGradient id="fersgrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#B31942" stop-opacity="0.5"/>
+                    <stop offset="1" stop-color="#B31942" stop-opacity="0"/>
+                  </linearGradient>
+                </defs>
+                <path d="M0 100 L60 92 L120 78 L180 60 L240 45 L300 32 L360 22 L400 18 L400 120 L0 120 Z" fill="url(#fersgrad)"/>
+                <path d="M0 100 L60 92 L120 78 L180 60 L240 45 L300 32 L360 22 L400 18" stroke="#fff" stroke-width="2" fill="none"/>
+                <circle cx="400" cy="18" r="4" fill="#fff"/>
+              </svg>
+              <div class="hub-tool-feature-stat">
+                <div class="hub-tool-feature-stat-val">$4,820</div>
+                <div class="hub-tool-feature-stat-lbl">projected monthly pension</div>
+              </div>
+            </div>
+            <span class="hub-tool-feature-cta">Start the calculator →</span>
+          </a>
+
+          <a href="/federal-benefits-playbook/tools/tsp-growth-calculator/" class="hub-tool">
+            <span class="hub-tool-num">02</span>
+            <h3 class="hub-tool-title">TSP Growth Projector</h3>
+            <p class="hub-tool-body">Model your TSP balance at retirement across C, S, I, F, G, and L Fund allocations.</p>
+            <span class="hub-tool-go">Open →</span>
+          </a>
+
+          <a href="/federal-benefits-playbook/tools/fers-supplement-estimator/" class="hub-tool">
+            <span class="hub-tool-num">03</span>
+            <h3 class="hub-tool-title">FERS Supplement Estimator</h3>
+            <p class="hub-tool-body">The SRS benefit that bridges you from retirement to age 62. Most feds don't know they get it.</p>
+            <span class="hub-tool-go">Open →</span>
+          </a>
+
+          <a href="/federal-benefits-playbook/tools/fegli-cost-calculator/" class="hub-tool">
+            <span class="hub-tool-num">04</span>
+            <h3 class="hub-tool-title">FEGLI Cost Calculator</h3>
+            <p class="hub-tool-body">See FEGLI's cost through retirement next to a private term-life alternative.</p>
+            <span class="hub-tool-go">Open →</span>
+          </a>
+
+          <a href="/federal-benefits-playbook/tools/retirement-income-estimator/" class="hub-tool">
+            <span class="hub-tool-num">05</span>
+            <h3 class="hub-tool-title">Retirement Income Estimator</h3>
+            <p class="hub-tool-body">FERS + TSP + Social Security + other. One total monthly number, honestly taxed.</p>
+            <span class="hub-tool-go">Open →</span>
+          </a>
+
+          <a href="/federal-benefits-playbook/tools/social-security-bridge/" class="hub-tool">
+            <span class="hub-tool-num">06</span>
+            <h3 class="hub-tool-title">Social Security Bridge</h3>
+            <p class="hub-tool-body">When should you claim? 62, 67, 70 &mdash; modeled against your FERS pension.</p>
+            <span class="hub-tool-go">Open →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════
+         WIN — "Dan & Sarah" style single-case narrative
+         ══════════════════════════════════════════════════════════════ -->
+    <section class="hub-win">
+      <div class="fp-container-wide hub-win-inner">
+        <div class="hub-win-card">
+          <div class="hub-win-meta">
+            <span class="fp-eyebrow">Case file · 04-2026</span>
+            <div class="hub-win-tags">
+              <span class="fp-tag fp-tag-dod">DoD</span>
+              <span class="fp-tag fp-tag-civilian">GS-14</span>
+              <span class="fp-tag">TSP</span>
+            </div>
+          </div>
+
+          <div class="hub-win-stat">
+            <div class="hub-win-stat-val">$148,000</div>
+            <div class="hub-win-stat-lbl">additional lifetime income we found in Dan &amp; Sarah's plan</div>
+          </div>
+
+          <blockquote class="hub-win-quote">
+            <p>"We thought we'd be fine. We were close &mdash; off by about <span class="fp-accent-red">eight years</span>, and we didn't know it. Mike walked through our TSP, our FERS, my wife's teacher pension, Social Security timing. The Retirement Money Map showed us where the gap was and how to close it without working longer."</p>
+            <cite>
+              <span class="hub-win-cite-name">Dan M.</span>
+              <span class="hub-win-cite-role">DoD civilian · age 58 · Ogden, UT</span>
+            </cite>
+          </blockquote>
+
+          <div class="hub-win-cta-row">
+            <a href="/federal-benefits-playbook/success-stories/" class="fp-btn fp-btn-tertiary">Read more client stories →</a>
+            <a href="/book-a-call/" class="fp-btn fp-btn-primary">Book your own Money Map call</a>
+          </div>
+        </div>
+
+        <!-- Portrait placeholder — real imagery would slot here.
+             Using abstract geometric illustration as placeholder. -->
+        <div class="hub-win-visual" aria-hidden="true">
+          <div class="hub-win-visual-card hub-win-visual-card-1">
+            <span class="hub-win-visual-eyebrow">BEFORE</span>
+            <svg viewBox="0 0 140 70"><path d="M0 60 L20 55 L40 58 L60 52 L80 50 L100 46 L120 42 L140 38" stroke="#8A919A" stroke-width="2" fill="none"/><line x1="0" y1="30" x2="140" y2="30" stroke="#B31942" stroke-width="1" stroke-dasharray="3 3"/></svg>
+            <span class="hub-win-visual-cap">projected to run out at age 81</span>
+          </div>
+          <div class="hub-win-visual-card hub-win-visual-card-2">
+            <span class="hub-win-visual-eyebrow">AFTER</span>
+            <svg viewBox="0 0 140 70"><path d="M0 60 L20 52 L40 48 L60 40 L80 32 L100 26 L120 20 L140 14" stroke="#0A3161" stroke-width="2.5" fill="none"/><line x1="0" y1="30" x2="140" y2="30" stroke="#B31942" stroke-width="1" stroke-dasharray="3 3"/></svg>
+            <span class="hub-win-visual-cap">lasts to age 97 with room</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════
+         LEARN — featured pillar articles
+         ══════════════════════════════════════════════════════════════ -->
+    <section class="hub-learn">
+      <div class="fp-container">
+        <header class="hub-section-head">
+          <div>
+            <span class="fp-eyebrow">Section two · Pillar reading</span>
+            <h2 class="fp-h2 hub-section-title">The manuals OPM <span class="fp-italic fp-accent-red">should have</span> written.</h2>
+          </div>
+          <div class="hub-section-meta">
+            <p class="fp-lede">Twelve deep-dive articles on the benefits that matter most. Written by our federal team, edited for a GS-13 &mdash; not a finance PhD. Free. No gate.</p>
+            <a href="/federal-benefits-playbook/learn/" class="fp-btn fp-btn-tertiary">Browse the full library →</a>
+          </div>
+        </header>
+
+        <div class="hub-learn-grid">
+          <a href="/federal-benefits-playbook/learn/tsp-101/" class="hub-learn-card hub-learn-card-hero">
+            <span class="fp-small-caps hub-learn-eyebrow">Pillar · 18 min read</span>
+            <h3 class="hub-learn-title">TSP 101: Everything your agency orientation skipped.</h3>
+            <p class="hub-learn-dek">C Fund vs. S Fund vs. I Fund. Lifecycle funds. Roth TSP. The G Fund myth. Withdrawal rules. How matching actually works. Start here if you have a TSP.</p>
+            <div class="hub-learn-meta">
+              <span class="fp-tag fp-tag-topic">TSP</span>
+              <span class="fp-tag fp-tag-topic">Investing</span>
+              <span class="hub-learn-author">Brent Thompson, CFP®</span>
+            </div>
+          </a>
+
+          <a href="/federal-benefits-playbook/learn/fers-retirement-101/" class="hub-learn-card">
+            <span class="fp-small-caps hub-learn-eyebrow">Pillar · 14 min read</span>
+            <h3 class="hub-learn-title">FERS Retirement 101</h3>
+            <p class="hub-learn-dek">The pension, the supplement, the Social Security offset, and the three retirement ages you need to know.</p>
+            <div class="hub-learn-meta">
+              <span class="fp-tag fp-tag-topic">FERS</span>
+            </div>
+          </a>
+
+          <a href="/federal-benefits-playbook/learn/fehb-in-retirement/" class="hub-learn-card">
+            <span class="fp-small-caps hub-learn-eyebrow">Pillar · 11 min read</span>
+            <h3 class="hub-learn-title">FEHB in Retirement</h3>
+            <p class="hub-learn-dek">The 5-year rule, Medicare coordination, and why dropping FEHB is almost always a mistake.</p>
+            <div class="hub-learn-meta">
+              <span class="fp-tag fp-tag-topic">FEHB</span>
+            </div>
+          </a>
+
+          <a href="/federal-benefits-playbook/learn/roth-tsp-vs-traditional/" class="hub-learn-card">
+            <span class="fp-small-caps hub-learn-eyebrow">Pillar · 9 min read</span>
+            <h3 class="hub-learn-title">Roth TSP vs. Traditional</h3>
+            <p class="hub-learn-dek">The #1 question we get. Here's the actual framework &mdash; and when the consensus advice is wrong.</p>
+            <div class="hub-learn-meta">
+              <span class="fp-tag fp-tag-topic">TSP</span>
+              <span class="fp-tag fp-tag-topic">Taxes</span>
+            </div>
+          </a>
+
+          <a href="/federal-benefits-playbook/learn/federal-retirement-taxes/" class="hub-learn-card">
+            <span class="fp-small-caps hub-learn-eyebrow">Pillar · 13 min read</span>
+            <h3 class="hub-learn-title">Federal Retirement Taxes</h3>
+            <p class="hub-learn-dek">FERS pension, TSP, SS, SRS &mdash; each one is taxed differently. A plain-English map.</p>
+            <div class="hub-learn-meta">
+              <span class="fp-tag fp-tag-topic">Taxes</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════
+         MASTERCLASS — the "story, not training" pitch
+         ══════════════════════════════════════════════════════════════ -->
+    <section class="hub-masterclass">
+      <div class="fp-container hub-masterclass-inner">
+        <div class="hub-masterclass-copy">
+          <span class="fp-eyebrow">The Federal Playbook Masterclass</span>
+          <h2 class="fp-h2 hub-masterclass-title">
+            A 47-minute walkthrough of a
+            <span class="fp-italic">real</span> federal retirement plan.
+          </h2>
+          <p class="fp-lede hub-masterclass-lede">
+            Not a course. Not a webinar. One advisor, one whiteboard, one anonymized case file &mdash; and the thirteen decisions that took Dan &amp; Sarah from "probably short" to "retired at 58 with margin." Free, ungated, available now.
+          </p>
+          <div class="hub-masterclass-ctas">
+            <a href="/federal-benefits-playbook/masterclass/" class="fp-btn fp-btn-primary fp-btn-lg">Watch the masterclass</a>
+            <span class="hub-masterclass-meta">47 min · no signup · no pitch</span>
+          </div>
+        </div>
+
+        <div class="hub-masterclass-video" role="button" tabindex="0" aria-label="Play masterclass">
+          <div class="hub-masterclass-video-frame">
+            <div class="hub-masterclass-video-play">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+            </div>
+            <div class="hub-masterclass-video-caption">
+              <div class="hub-masterclass-video-title">The Retirement Money Map, start to finish</div>
+              <div class="hub-masterclass-video-timer">47:12 · Chapter 1 of 13</div>
+            </div>
+            <div class="hub-masterclass-video-scrub">
+              <div class="hub-masterclass-video-scrub-fill"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════
+         TEAM — the federal specialists
+         ══════════════════════════════════════════════════════════════ -->
+    <section class="hub-team">
+      <div class="fp-container">
+        <header class="hub-section-head">
+          <div>
+            <span class="fp-eyebrow">Section three · Who you'd be working with</span>
+            <h2 class="fp-h2 hub-section-title">Three advisors. One focus: federal.</h2>
+          </div>
+          <div class="hub-section-meta">
+            <p class="fp-lede">We don't do "generalist" federal planning. Our federal team works with FERS, CSRS, and TSP clients every day &mdash; which is why they can answer the questions agency HR can't.</p>
+            <a href="/federal-benefits-playbook/team/" class="fp-btn fp-btn-tertiary">Meet the full team →</a>
+          </div>
+        </header>
+
+        <div class="hub-team-grid">
+          <article class="hub-team-card">
+            <div class="hub-team-portrait" aria-hidden="true">
+              <div class="hub-team-portrait-mono"><span>MS</span></div>
+            </div>
+            <div class="hub-team-body">
+              <h3 class="hub-team-name">Mike Stevens</h3>
+              <div class="hub-team-role">Founder · Federal Benefits Specialist</div>
+              <p class="hub-team-bio">22 years advising federal families. Built the FERS calculator Capital Wealth runs today. Writes most of our pillar content.</p>
+              <div class="hub-team-tags">
+                <span class="fp-tag fp-tag-dod">DoD</span>
+                <span class="fp-tag fp-tag-civilian">Civilian</span>
+                <span class="fp-tag">TSP</span>
+              </div>
+            </div>
+          </article>
+          <article class="hub-team-card">
+            <div class="hub-team-portrait" aria-hidden="true">
+              <div class="hub-team-portrait-mono hub-team-portrait-red"><span>BT</span></div>
+            </div>
+            <div class="hub-team-body">
+              <h3 class="hub-team-name">Brent Thompson, CFP<sup>®</sup></h3>
+              <div class="hub-team-role">Senior Advisor · TSP &amp; Roth Strategy</div>
+              <p class="hub-team-bio">Former DoD civilian himself. Specializes in Roth conversion corridors and TSP withdrawal sequencing.</p>
+              <div class="hub-team-tags">
+                <span class="fp-tag">TSP</span>
+                <span class="fp-tag fp-tag-topic">Taxes</span>
+              </div>
+            </div>
+          </article>
+          <article class="hub-team-card">
+            <div class="hub-team-portrait" aria-hidden="true">
+              <div class="hub-team-portrait-mono hub-team-portrait-blue"><span>CA</span></div>
+            </div>
+            <div class="hub-team-body">
+              <h3 class="hub-team-name">Chad Austin, CFP<sup>®</sup></h3>
+              <div class="hub-team-role">Advisor · CSRS &amp; USPS specialist</div>
+              <p class="hub-team-bio">One of the few advisors in the country who still works CSRS cases fluently. USPS career-employee caseload.</p>
+              <div class="hub-team-tags">
+                <span class="fp-tag">CSRS</span>
+                <span class="fp-tag fp-tag-usps">USPS</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════
+         LEAD CAPTURE — guide download
+         ══════════════════════════════════════════════════════════════ -->
+    <section class="hub-leadcap">
+      <div class="fp-container hub-leadcap-inner">
+        <div class="hub-leadcap-copy">
+          <span class="fp-eyebrow">Tertiary CTA · Free download</span>
+          <h2 class="fp-h3 hub-leadcap-title">The 5-Year Pre-Retirement Checklist</h2>
+          <p class="fp-lede hub-leadcap-body">
+            A 14-page PDF &mdash; what to do at 60 months out, 36, 24, 12, 6, 3, and the week you retire. Written for feds. Free. No upsell.
+          </p>
+          <ul class="hub-leadcap-items">
+            <li>✓ Month-by-month action list through the last 60 months of service</li>
+            <li>✓ The three OPM mistakes that delay your pension 4–8 months</li>
+            <li>✓ FEHB, FEGLI, SRS, and TSP decisions in order</li>
+          </ul>
+        </div>
+
+        <form class="hub-leadcap-form" onsubmit="event.preventDefault(); alert('Demo only.');">
+          <div class="fp-field">
+            <label class="fp-label" for="lead-name">Full name</label>
+            <input class="fp-input" id="lead-name" type="text" placeholder="Jane Morrison" required/>
+          </div>
+          <div class="fp-field">
+            <label class="fp-label" for="lead-email">Work or personal email</label>
+            <input class="fp-input" id="lead-email" type="email" placeholder="jmorrison@email.com" required/>
+          </div>
+          <div class="fp-field">
+            <label class="fp-label" for="lead-agency">Your agency (optional)</label>
+            <select class="fp-select" id="lead-agency">
+              <option>Select agency…</option>
+              <option>Department of Defense</option>
+              <option>Department of Veterans Affairs</option>
+              <option>USPS</option>
+              <option>Civilian / other</option>
+            </select>
+          </div>
+          <button type="submit" class="fp-btn fp-btn-primary" style="width:100%">
+            Send me the checklist
+          </button>
+          <p class="hub-leadcap-promise">No spam. One email. Unsubscribe anytime.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════
+         FINAL CTA — the "book a call" close
+         ══════════════════════════════════════════════════════════════ -->
+    <section class="hub-close">
+      <div class="fp-container hub-close-inner">
+        <span class="fp-eyebrow fp-eyebrow-blue">Ready when you are</span>
+        <h2 class="fp-display hub-close-title">
+          30 minutes. No pitch. <br/>
+          <span class="fp-italic fp-accent-red">Just your numbers.</span>
+        </h2>
+        <p class="fp-lede hub-close-lede">
+          Book a call with a federal specialist. We'll walk through your FERS, TSP, and benefits together and build a one-page Retirement Money Map you can keep &mdash; whether you work with us or not.
+        </p>
+        <a href="/book-a-call/" class="fp-btn fp-btn-primary fp-btn-lg">
+          Book a Call
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10m-4-4l4 4-4 4" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <div class="hub-close-secondary">
+          <a href="/federal-benefits-playbook/tools/" class="fp-btn fp-btn-tertiary">Run a calculator first →</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="fp-site-footer"></footer>
+  <script src="chrome.js"></script>
+</body>
+</html>
